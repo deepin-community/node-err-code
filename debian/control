@@ -1,0 +1,28 @@
+Source: node-err-code
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13),
+ , nodejs
+ , node-expect.js
+ , mocha
+ , node-browserify-lite
+ , dh-sequence-nodejs
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-err-code
+Vcs-Git: https://salsa.debian.org/js-team/node-err-code.git
+Homepage: https://github.com/IndigoUnited/js-err-code#readme
+Rules-Requires-Root: no
+
+Package: node-err-code
+Architecture: all
+Depends:
+ ${misc:Depends}
+Multi-Arch: foreign
+Description: Create an error with a code
+ Create new error instances with a code and additional properties.
+ .
+ Node.js is an event-based server-side JavaScript engine.
